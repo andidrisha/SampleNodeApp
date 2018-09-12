@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Deploy to EB if branch is Master
           command: |
-             eb use dekker-arc-dev --profile dev
+             eb use sample-node-app-dev --profile dev
              eb deploy -v --staged --profile dev
 workflows:
   version: 2
