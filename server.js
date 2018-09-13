@@ -33,10 +33,6 @@ app.get('/', (req, res) => {
 
 require('./app/routes/casestudy.routes.js')(app);
 
-app.configure(function(){
-    app.set('port', process.env.PORT || 3000);
-});
-
 // listen for requests
 app.listen(3000, () => {
     console.log("Server is listening on port 3000");
