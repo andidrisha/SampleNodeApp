@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const NoteSchema = mongoose.Schema({
+const CaseStudySchema = mongoose.Schema({
     clientName: String,
     summary: String,
     description: String,
@@ -9,4 +9,4 @@ const NoteSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('Note', NoteSchema);
+module.exports = mongoose.model('CaseStudy', CaseStudySchema);

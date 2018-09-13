@@ -31,7 +31,11 @@ app.get('/', (req, res) => {
     res.json({"message": "Welcome to Sample app."});
 });
 
-require('./app/routes/note.routes.js')(app);
+require('./app/routes/casestudy.routes.js')(app);
+
+app.configure(function(){
+    app.set('port', process.env.PORT || 3000);
+});
 
 // listen for requests
 app.listen(3000, () => {
